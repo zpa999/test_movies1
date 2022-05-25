@@ -1,5 +1,5 @@
-import axios from "axios";
 import React from "react";
+import axios from "axios";
 import Movie from "./Movie";
 import "./App.css";
 
@@ -32,6 +32,7 @@ class App extends React.Component {
           <div className="movies">
             {movies.map((movie) => (
               <Movie
+                key={movie.id}
                 title={movie.title}
                 year={movie.year}
                 summary={movie.summary}

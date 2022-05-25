@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0; /*좌우여백 0 */
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -24,30 +24,32 @@ body,
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; /*요소들을 컨테이너의 중앙으로 정렬*/
   align-items: center;
 }
 
 .movies {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-between; /*요소들 사이에 동일한 간격을 둡니다.*/
+  flex-wrap: wrap; /*컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때
+  아이템 줄바꿈을 어떻게 할지 결정하는 속성입니다.*/
   padding: 50px;
   width: 70%;
 }
 
 .movies .movie {
-  width: 35%;
+  width: 40%;
   background-color: white;
   margin-bottom: 70px;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /*수직축 방향으로 아이템을들 정렬하는 속성*/
   justify-content: space-between;
   font-weight: 300;
   padding: 5px;
 }
 
 .movie img {
+  padding-top: 2%;
   max-width: 150px;
 }
 
